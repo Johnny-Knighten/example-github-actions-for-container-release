@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.0.0...1.1.0) (2023-11-05)
+
+
+### Bug Fixes
+
+* added test_content.txt to fix docker build ([45ff1d5](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/45ff1d5e7083f51a17c137212424f8dba5c16235))
+
+
+### Features
+
+* overhaul of workflows and added ci local tests ([6f143df](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/6f143df23f1ec9940f22448689031f1345577815))
+
 ## [1.0.0](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/...1.0.0) (2023-11-04)
 
 
