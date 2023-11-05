@@ -89,7 +89,6 @@ jobs:
           push: true
           tags:  |
             johnnyknighten/test:latest
-            johnnyknighten/test:${{ needs.on-build-and-test-success.outputs.version }}
 
       - name: Push Image to Docker Hub (DRY RUN)
         if: ${{ env.ACT }}
