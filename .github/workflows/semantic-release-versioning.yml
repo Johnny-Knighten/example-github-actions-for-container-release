@@ -71,14 +71,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: ${{ env.ACT || 'Pull Cached Docker Layers' }}
-        uses: actions/cache@v3
-        if: ${{ !env.ACT }}
-        with:
-          path: /tmp/.buildx-cache
-          key: ${{ runner.os }}-buildx-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-buildx-
 
       - name: Push Image to Docker Hub
         if: ${{ !env.ACT}}
@@ -89,7 +81,8 @@ jobs:
           push: true
           tags:  |
             johnnyknighten/test:latest
-          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
       - name: Push Image to Docker Hub (DRY RUN)
         if: ${{ env.ACT }}
