@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.2...1.1.3) (2023-11-05)
+
+
+### Bug Fixes
+
+* added cache-to ([5840b90](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/5840b901bcc276d84157b55cbb921735c45bf3eb))
+
 ## [1.1.2](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.1...1.1.2) (2023-11-05)
 
 
