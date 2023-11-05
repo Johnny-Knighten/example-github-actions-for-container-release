@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.4...1.1.5) (2023-11-05)
+
+
+### Bug Fixes
+
+* added buildx setup ([5c797a0](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/5c797a0fda9478841cfe49dcfde41fce699a7f4a))
+
 ## [1.1.4](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.3...1.1.4) (2023-11-05)
 
 
