@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.6...1.1.7) (2023-11-05)
+
+
+### Bug Fixes
+
+* added checkout ([5efa4fd](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/5efa4fd6cf552f39156c27df99eec9f7db707e22))
+
 ## [1.1.6](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.5...1.1.6) (2023-11-05)
 
 
