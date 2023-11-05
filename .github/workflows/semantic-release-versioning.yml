@@ -89,6 +89,7 @@ jobs:
           push: true
           tags:  |
             johnnyknighten/test:latest
+          cache-from: type=local,src=/tmp/.buildx-cache
 
       - name: Push Image to Docker Hub (DRY RUN)
         if: ${{ env.ACT }}
