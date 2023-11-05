@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.5...1.1.6) (2023-11-05)
+
+
+### Bug Fixes
+
+* removed dockerfile line ([809ca59](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/809ca597e0bf72b3e40c8b2f51e0a98a6cad387e))
+
 ## [1.1.5](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.4...1.1.5) (2023-11-05)
 
 
