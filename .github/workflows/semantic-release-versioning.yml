@@ -65,6 +65,12 @@ jobs:
     needs:
       - on-build-and-test-success
     steps:
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
