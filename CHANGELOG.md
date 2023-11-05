@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.0...1.1.1) (2023-11-05)
+
+
+### Bug Fixes
+
+* removed semantic release tag for now ([8aa792d](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/8aa792dfe445dd2f735ff84d2577478df9f2e2df))
+
 ## [1.1.0](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.0.0...1.1.0) (2023-11-05)
 
 
