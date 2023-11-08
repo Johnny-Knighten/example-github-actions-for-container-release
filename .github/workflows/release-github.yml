@@ -1,9 +1,14 @@
 name: Release
 run-name: Release Ready Commit Pushed Into ${{ github.ref_name }} - Create GitHub Release
 on:
-  repository_dispatch:
+  workflow_run:
+    workflows: 
+      - "Build and Test"
     types: 
-      - github-release
+      - completed
+    branches:
+      - main
+      - next
 
 env:
   ACT: ""
@@ -14,6 +19,7 @@ permissions:
 jobs:
   github-release:
     name: GitHub Release
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write 
