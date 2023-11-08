@@ -83,14 +83,23 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Create Docker Metadata (Tags)
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: |
+            johnnyknighten/test
+          tags: |
+            type=semver,pattern={{version}}
+            type=sha
+
       - name: Push Image to Docker Hub
         if: ${{ !env.ACT}}
         uses: docker/build-push-action@v3
         with:
           context: .
           push: true
-          tags:  |
-            johnnyknighten/test:latest
+          tags:  ${{ steps.meta.outputs.tags }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -99,5 +108,4 @@ jobs:
         run: |
           echo "DRY RUN - Skipping Docker Build and Push"
           echo "The Following Images Would Have Been Pushed:"
-          echo "\tjohnnyknighten/test:latest"
-          echo "\tjohnnyknighten/test:${{ needs.on-build-and-test-success.outputs.version_dry_run }}"
+          echo ${{ steps.meta.outputs.tags }}
