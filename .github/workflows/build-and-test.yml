@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - next
+    paths-ignore:
+      - '**/CHANGELOG.md' # Avoids retriggering the workflow on changes to the CHANGELOG
   pull_request:
     types:
       - opened
