@@ -1,3 +1,13 @@
+## [1.2.1](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.0...1.2.1) (2023-11-08)
+
+
+### Bug Fixes
+
+* added paths-ignore to prevent build-and-test from launching on release commit ([083e66b](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/083e66b95905f1243142aecffb1acc7763d91489))
+* made default env.ACT var empty string ([65eb0b8](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/65eb0b89aaa76aac3147ef6b47ec3c13d12380a3))
+* moved back to using workflow_run to trigger release-github ([78d2dcd](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/78d2dcd813b6cac80e2d28eb26c5a7b47c659cbc))
+* moved release-dockerhub back to using on: push ([d0f9a82](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/d0f9a82eb93dbd166fad30d6a6c35cc2ef17d726))
+
 ## [1.2.0](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.7...1.2.0) (2023-11-08)
 
 
