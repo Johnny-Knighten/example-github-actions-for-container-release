@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - next
+    paths-ignore:
+      - '**/CHANGELOG.md' # Avoids retriggering the workflow on changes to the CHANGELOG
   pull_request:
     types:
       - opened
@@ -46,16 +48,3 @@ jobs:
 
     - name: Check Nano is installed
       run: docker run --rm johnnyknighten/test:latest -c "nano --version"
-
-  trigger-release:
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/next') 
-    needs:
-      - test
-    permissions:
-      contents: write 
-    runs-on: ubuntu-latest
-    steps:
-    - name: Trigger GitHub Release
-      uses: peter-evans/repository-dispatch@v2
-      with:
-        event-type: github-release
