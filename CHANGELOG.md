@@ -1,3 +1,17 @@
+## [1.2.0](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.7...1.2.0) (2023-11-08)
+
+
+### Bug Fixes
+
+* added content permissions to build and test workflow ([206624f](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/206624fdefdef9f5ce857704d15e68b574ab2afb))
+* made env.ACT default to null value ([55fe293](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/55fe2937639b73106c8caaa9d750571698fe6733))
+* updated event name in README example and added ACT var into workflow ([7bb029c](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/7bb029cf090d27873257b20671cd836b2c8f052f))
+
+
+### Features
+
+* added metadata action to geneterate container tags ([c8eb314](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/c8eb314520552007db32d38e6388149ff38f2dae))
+
 ## [1.1.7](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.1.6...1.1.7) (2023-11-05)
 
 
