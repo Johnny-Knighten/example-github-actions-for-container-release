@@ -6,7 +6,7 @@ on:
       - github-release
 
 env:
-  ACT: "False"
+  ACT: ""
 
 permissions:
   contents: read
