@@ -2,9 +2,6 @@ name: DockerHub Push
 run-name: Release Tag on ${{ github.ref_name }} - Pushing Image To DockerHub
 on:
   push:
-    branches:
-      - main
-      - next
     tags: 
       - '[0-9]+.[0-9]+.[0-9]+'
       - '[0-9]+.[0-9]+.[0-9]+-next.[0-9]+'
