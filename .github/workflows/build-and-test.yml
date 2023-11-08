@@ -51,6 +51,8 @@ jobs:
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/next') 
     needs:
       - test
+    permissions:
+      contents: write 
     runs-on: ubuntu-latest
     steps:
     - name: Trigger GitHub Release
