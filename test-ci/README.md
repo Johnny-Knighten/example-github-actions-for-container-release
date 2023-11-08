@@ -116,7 +116,7 @@ GITHUB_TOKEN=TOKEN
 #### Test 1 - After Previous Workflow Success on Main Branch
 
 ```bash
-act workflow_run -e ./test-ci/events/failure-docker-build-test-main-branch.json --secret-file ./test-ci/my.secrets  --env RELEASE_DRY_RUN=true --reuse
+act workflow_run -e ./test-ci/events/failued-docker-build-test-main-branch.json --secret-file ./test-ci/my.secrets  --env RELEASE_DRY_RUN=true --reuse
 ```
 
 #### Test 2 - After Previous Workflow Failure on Main Branch

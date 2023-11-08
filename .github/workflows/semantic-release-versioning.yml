@@ -9,6 +9,9 @@ on:
     branches:
       - main
 
+env:
+  ACT: "False"
+
 permissions:
   contents: read # for checkout
 
