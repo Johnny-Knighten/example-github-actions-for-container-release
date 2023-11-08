@@ -1,0 +1,49 @@
+name: Release
+run-name: Release Ready Commit Pushed Into ${{ github.ref_name }} - Create GitHub Release
+on:
+  repository_dispatch:
+    types: 
+      - github-release
+
+env:
+  ACT: "False"
+
+permissions:
+  contents: read
+
+jobs:
+  github-release:
+    name: GitHub Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write 
+      issues: write 
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Release
+        id: semantic_release
+        if: ${{ !env.ACT }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
+
+      - name: Release (DRY RUN)
+        id: semantic_release_dry_run
+        if: ${{ env.ACT }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release --dry-run
+
