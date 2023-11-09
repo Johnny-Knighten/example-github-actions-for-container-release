@@ -1,3 +1,10 @@
+## [1.2.6-next.6](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.5...1.2.6-next.6) (2023-11-09)
+
+
+### Bug Fixes
+
+* updated job and runname on releae workflow ([bdae9a7](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/bdae9a7b9c9749b5e78a646ed67458a5eb431c4d))
+
 ## [1.2.6-next.5](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.4...1.2.6-next.5) (2023-11-09)
 
 
