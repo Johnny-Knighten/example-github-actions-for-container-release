@@ -67,7 +67,7 @@ jobs:
   dockerhub-release:
     name: Push Image to DockerHub
     needs: github-release
-    if: needs.github-release.outputs.new_version || needs.github-release.outputs.new_version_dry_run
+    if: needs.github-release.outputs.new_version != '' || needs.github-release.outputs.new_version_dry_run != ''
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
