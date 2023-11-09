@@ -1,3 +1,14 @@
+## [1.3.0-next.4](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.3.0-next.3...1.3.0-next.4) (2023-11-09)
+
+
+### Bug Fixes
+
+* added repo checkout in test job ([03edf11](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/03edf11c966211df8bc07d6873ff63d59d1adb2b))
+* removed cache-to in release workflow ([6c3684d](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/6c3684d043e9f3c5f1608507da8c4c465b30fe7d))
+* updated docker caching between jobs ([c715d5f](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/c715d5f7ae632ab5e94712dbf03433accda31b0b))
+* updated dockerhub repo name ([0d9f72f](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/0d9f72f015ff027ad2e88f95aebcb213e125ebdc))
+* updated github repo url ([394f08a](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/394f08a9dda44fc9b76fb0c90e21102a53527a5e))
+
 ## [1.3.0-next.3](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.3.0-next.2...1.3.0-next.3) (2023-11-09)
 
 
