@@ -40,7 +40,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          NEW_VERSION=$(npx semantic-release | grep "Published" | cut -d" " -f9)
+          OUTPUT=$(npx semantic-release --dry-run)
+          echo "$OUTPUT"
+          NEW_VERSION=$(echo "$$OUTPUT" | grep "Published" | cut -d" " -f9)
           echo "new_version<<EOF" >> $GITHUB_OUTPUT
           echo "$NEW_VERSION" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
