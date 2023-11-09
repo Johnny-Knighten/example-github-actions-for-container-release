@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.1...1.2.2) (2023-11-08)
+
+
+### Bug Fixes
+
+* removed branches statment on release-dockerhub ([f1e8c85](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/f1e8c85ffa876e0b57e18476a273618a980cc328))
+
 ## [1.2.1](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.0...1.2.1) (2023-11-08)
 
 

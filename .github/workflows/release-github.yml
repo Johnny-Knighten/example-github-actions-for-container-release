@@ -1,5 +1,5 @@
 name: Release
-run-name: Release Ready Commit Pushed Into ${{ github.ref_name }} - Create GitHub Release
+run-name: Release Ready Commit Pushed Into ${{ github.event.workflow_run.head_branch }} - Create GitHub Release
 on:
   workflow_run:
     workflows: 
@@ -29,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          ref: ${{ github.event.workflow_run.head_branch }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
