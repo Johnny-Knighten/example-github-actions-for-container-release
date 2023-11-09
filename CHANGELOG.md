@@ -1,3 +1,10 @@
+## [1.2.6-next.3](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.2...1.2.6-next.3) (2023-11-09)
+
+
+### Bug Fixes
+
+* added debug job ([0e8e289](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/0e8e289eb118e0d04f777f0ff1b1329786b0b789))
+
 ## [1.2.6-next.2](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.1...1.2.6-next.2) (2023-11-09)
 
 
