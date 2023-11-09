@@ -23,7 +23,7 @@ jobs:
       with:
         dockerfile: "Dockerfile"
 
-    - name: Build Docker image
+    - name: Build Docker image (Push To Cache)
       uses: docker/build-push-action@v3
       with:
         context: .
