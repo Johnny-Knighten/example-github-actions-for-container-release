@@ -49,9 +49,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          DRY_RUN_OUTPUT=$(npx semantic-release --dry-run)
-          echo "$DRY_RUN_OUTPUT"
-          NEW_VERSION=$(echo "$DRY_RUN_OUTPUT" | grep "The next release version is" | cut -d" " -f6)
+          NEW_VERSION=$(npx semantic-release | grep "Published" | cut -d" " -f3)
           echo "new_version=$NEW_VERSION" >> $GITHUB_ENV
 
     outputs:
