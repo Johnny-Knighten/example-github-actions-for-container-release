@@ -1,3 +1,10 @@
+## [1.2.6-next.2](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.1...1.2.6-next.2) (2023-11-09)
+
+
+### Bug Fixes
+
+* made ifs in dockerhub-rlease look for empty strings ([fa31f1a](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/fa31f1a3ae361a179472d1b82a2ac826332dc690))
+
 ## [1.2.6-next.1](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.5...1.2.6-next.1) (2023-11-09)
 
 
