@@ -1,15 +1,11 @@
 name: Build and Test
-run-name: New Push or PR Opened On ${{ github.ref_name }} - Building and Testing Docker Image
+run-name: Build/Test for PR #${{ github.event.number }} on ${{ github.head_ref }}
+
 on:
-  push:
-    branches:
-      - main
-      - next
-    paths-ignore:
-      - '**/CHANGELOG.md' # Avoids retriggering the workflow on changes to the CHANGELOG
   pull_request:
     types:
       - opened
+      - reopened
       - synchronize
 
 jobs:
