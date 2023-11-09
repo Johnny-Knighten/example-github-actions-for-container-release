@@ -31,7 +31,6 @@ jobs:
         push: false
         load: true
         tags: johnnyknighten/example-github-actions-for-container-release:latest
-        cache-from: type=gha
         cache-to: type=gha,mode=max
 
   test:
@@ -39,6 +38,19 @@ jobs:
     needs:
       - lint-and-build
     steps:
+    - name: Setup Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Build Docker image
+      uses: docker/build-push-action@v3
+      with:
+        context: .
+        file: ./Dockerfile
+        push: false
+        load: true
+        tags: johnnyknighten/example-github-actions-for-container-release:latest
+        cache-from: type=gha
+
     - name: Test the Docker image TEST_VAR equals content of text_content.text
       run: docker run --rm johnnyknighten/example-github-actions-for-container-release:latest -c "cat test_content.txt | grep -q \"Hello World\""
 
