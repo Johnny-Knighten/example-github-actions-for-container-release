@@ -102,7 +102,7 @@ jobs:
           tags: |
             type=semver,pattern={{version}},value=${{ needs.github-release.outputs.new_version_dry_run }}
 
-      - name: Push Image to Docker Hub
+      - name: Push Image to DockerHub
         if: ${{ !env.ACT }}
         uses: docker/build-push-action@v3
         with:
@@ -118,3 +118,11 @@ jobs:
           echo "DRY RUN - Skipping Docker Build and Push"
           echo "The Following Images Would Have Been Pushed:"
           echo "${{ steps.meta-dry-run.outputs.tags }}"
+
+      - name: Update DockerHub description
+        if: ${{ !env.ACT }}
+        uses: peter-evans/dockerhub-description@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: johnnyknighten/test
