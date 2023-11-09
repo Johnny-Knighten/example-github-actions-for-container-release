@@ -1,3 +1,10 @@
+## [1.3.0-next.1](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.6...1.3.0-next.1) (2023-11-09)
+
+
+### Features
+
+* dockerhub description now matches base README.md ([5cfa91f](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/5cfa91fee9f4d082437942c5953d37026cc1c577))
+
 ## [1.2.6-next.6](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.5...1.2.6-next.6) (2023-11-09)
 
 
