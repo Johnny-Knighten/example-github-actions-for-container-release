@@ -1,3 +1,11 @@
+## [1.2.4-next.1](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.3...1.2.4-next.1) (2023-11-09)
+
+
+### Bug Fixes
+
+* removed ref on checkout in release-github ([31d3a27](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/31d3a27f6132a249488c137352c201cb27670cd9))
+* switch all on statements to match a PR focused workflow ([b62b81c](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/b62b81c81c7a5559b159de739ec41354320c374b))
+
 ## [1.2.3](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.2...1.2.3) (2023-11-09)
 
 
