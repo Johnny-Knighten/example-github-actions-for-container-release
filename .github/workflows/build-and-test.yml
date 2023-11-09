@@ -30,7 +30,7 @@ jobs:
         file: ./Dockerfile
         push: false
         load: true
-        tags: johnnyknighten/test:latest
+        tags: johnnyknighten/example-github-actions-for-container-release:latest
         cache-from: type=gha
         cache-to: type=gha,mode=max
 
@@ -40,7 +40,7 @@ jobs:
       - lint-and-build
     steps:
     - name: Test the Docker image TEST_VAR equals content of text_content.text
-      run: docker run --rm johnnyknighten/test:latest -c "cat test_content.txt | grep -q \"Hello World\""
+      run: docker run --rm johnnyknighten/example-github-actions-for-container-release:latest -c "cat test_content.txt | grep -q \"Hello World\""
 
     - name: Check Nano is installed
-      run: docker run --rm johnnyknighten/test:latest -c "nano --version"
+      run: docker run --rm johnnyknighten/example-github-actions-for-container-release:latest -c "nano --version"
