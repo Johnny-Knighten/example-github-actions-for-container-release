@@ -126,3 +126,5 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: johnnyknighten/test
+          short-description: ${{ github.event.repository.description }}
+          enable-url-completion: true
