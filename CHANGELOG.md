@@ -1,3 +1,10 @@
+## [1.2.6-next.4](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.3...1.2.6-next.4) (2023-11-09)
+
+
+### Bug Fixes
+
+* removed extra dollar sign in non dry-run release ([7139746](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/7139746c1956d47c940ca700da609cee1c7bf4d2))
+
 ## [1.2.6-next.3](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.2...1.2.6-next.3) (2023-11-09)
 
 
