@@ -1,3 +1,11 @@
+## [1.3.0-next.3](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.3.0-next.2...1.3.0-next.3) (2023-11-09)
+
+
+### Bug Fixes
+
+* updated halolint-action to v3.1.0 ([2661a22](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/2661a2237b61144bc98844878b4cfe0291a7c0be))
+* updated setup-buildx-action to v3 ([b6300f9](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/b6300f990bb94dafb6373aa1211ab803babece5b))
+
 ## [1.3.0-next.2](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.3.0-next.1...1.3.0-next.2) (2023-11-09)
 
 
