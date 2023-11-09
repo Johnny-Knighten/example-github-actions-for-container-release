@@ -64,6 +64,16 @@ jobs:
       new_version: ${{ steps.semantic_release.outputs.new_version }}
       new_version_dry_run: ${{ steps.semantic_release_dry_run.outputs.new_version }}
 
+  output-debug:
+    name: Debug Above Output
+    needs: github-release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug
+        run: |
+          echo "new_version: ${{ needs.github-release.outputs.new_version }}"
+          echo "new_version_dry_run: ${{ needs.github-release.outputs.new_version_dry_run }}"
+
   dockerhub-release:
     name: Push Image to DockerHub
     needs: github-release
