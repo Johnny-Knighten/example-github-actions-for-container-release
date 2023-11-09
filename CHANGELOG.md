@@ -1,3 +1,11 @@
+## [1.2.6-next.1](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.5...1.2.6-next.1) (2023-11-09)
+
+
+### Bug Fixes
+
+* added output echo to remeanse release ([f96af0c](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/f96af0cfb23ce44fab3eecbda225161e1adbaad3))
+* removed extra dry run in semver ([94171ac](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/94171ac624a76daa980de0dca5669f1745248fbd))
+
 ## [1.2.5](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.4...1.2.5) (2023-11-09)
 
 
