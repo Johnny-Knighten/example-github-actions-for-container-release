@@ -106,13 +106,15 @@ GITHUB_TOKEN=TOKEN
 ### Workflow - Build and Test Docker Image
 
 Triggered on:
-* `push` events on `main` and `next` branches 
-* `pull_request` events that are `opened` or `synchronize`.
+* These `pull_request` events types:
+  * `opened`
+  * `reopened`
+  * `synchronize`
 
 Goal:
-* Build and test the docker image anytime a PR is merged into `main` or `next`
-  * If the PR is merged into `main` or `next` and all tests pass then the [release-github.yml](.github/workflows/release-github.yml) workflow will be triggered.
-* Build and test the docker image anytime a a PR is opened to ensure the PR is not broken
+* Build and test the docker image anytime a PR is `opened`/`reopened` or `synchronized` (new commits pushed to PR branch) to ensure the PR is clean and breaks no tests
+  * We will rely on branch rules to ensure all statuses are passing before merging
+  * We will rely on branch rules to ensure `main` and `next` branches are protected from pushes and require PRs to add new commits to those branches
 
 See [.github/workflows/build-and-test.yml](./.github/workflows/build-and-test.yml) for exact details
 
@@ -122,35 +124,22 @@ See [.github/workflows/build-and-test.yml](./.github/workflows/build-and-test.ym
 This works because by default nektos/act will run the `push` event.
 
 ```bash
-act push --secret-file ./test-ci/my.secrets --reuse
+act pull_request --secret-file ./test-ci/my.secrets --reuse
 ```
 
-#### Test - Push On Main Branch (Should Trigger Release)
-
-```bash
-act push --secret-file ./test-ci/my.secrets -e ./test-ci/events/push-to-main-branch.json --reuse
-```
-
-#### Test - Push On Next Branch (Should Trigger Release)
-
-```bash
-act push --secret-file ./test-ci/my.secrets -e ./test-ci/events/push-to-next-branch.json --reuse
-```
-
-#### Test - Push On Feature Branch (Should Not Trigger Release)
-
-```bash
-act push --secret-file ./test-ci/my.secrets -e ./test-ci/events/push-to-feature-branch.json --reuse
-```
-
-#### Test - Open PR (Should Not Trigger Release)
-**Not TESTABLE Via Act Currently See This Issue: https://github.com/nektos/act/issues/671**
+#### Test - Open PR 
 
 ```bash
 act pull_request --secret-file ./test-ci/my.secrets -e ./test-ci/events/pr-open.json --reuse
 ```
 
-#### Test - Synchronize PR (Should Not Trigger Release)
+#### Test - Reopen PR 
+**Not TESTABLE Via Act Currently See This Issue: https://github.com/nektos/act/issues/671**
+```bash
+act pull_request --secret-file ./test-ci/my.secrets -e ./test-ci/events/pr-reopen.json --reuse
+```
+
+#### Test - Synchronize PR 
 **Not TESTABLE Via Act Currently See This Issue: https://github.com/nektos/act/issues/671**
 ```bash
 act pull_request --secret-file ./test-ci/my.secrets -e ./test-ci/events/pr-sync.json --reuse
@@ -162,52 +151,35 @@ act pull_request --secret-file ./test-ci/my.secrets -e ./test-ci/events/pr-sync.
 act pull_request --secret-file ./test-ci/my.secrets -e ./test-ci/events/pr-close.json --reuse
 ```
 
-### Workflow - GitHub Release
+### Workflow - Release
 
 Triggered on:
-* `repository_dispatch` of type `github-release`
+* `push` to `main` or `next` branches
+  * We will rely on branch rules to ensure `main` and `next` branches are protected from pushes and require PRs to add new commits to those branches
+  * Successful PR merges result in a push to either branch
 
 Goal:
-* Trigger a release on GitHub
+* Trigger a release on GitHub and push new Docker images to DockerHub
 
-See [.github/workflows/release-github.yml](./.github/workflows/release-github.yml) for exact details
+See [.github/workflows/release.yml](./.github/workflows/release.yml) for exact details
 
-Note if you want to verify releases on the `next` branch temporally rename your branch to `next` and then rename it back to `main` when done. The actions/checkout@v3 action will copy your current working copy of your code into the container. So if you are on the `next` branch when you run the action it will run semantic-release as it being on the `next`.
 
-#### Test - Repository Dispatch of Type `github-release` (Workflow Executes)
+Note if you want to verify releases on the `main`/`next` branch temporally rename your branch to `main`/`next` and then rename it back to to its original when done. The actions/checkout@v3 action will copy your current working copy of your code into the container. So if you are on the `main`/`next` branch when you run the action it will run semantic-release as it being on the `main`/`next`.
+
+#### Test - PR Merge To Main Branch 
 
 ```bash
-act repository_dispatch --secret-file ./test-ci/my.secrets -e ./test-ci/events/repo-dispatch-github-release.json --reuse
+act push --secret-file ./test-ci/my.secrets -e ./test-ci/events/push-to-main-branch.json --reuse
 ``` 
 
-#### Test - Repository Dispatch of Not Type `github-release` (No Workflow Execution)
-**Not TESTABLE Via Act Currently See This Issue: https://github.com/nektos/act/issues/671**
-```bash
-act repository_dispatch --secret-file ./test-ci/my.secrets -e ./test-ci/events/repo-dispatch-dockerhub-release.json --reuse
-```
-
-### Workflow - DockerHub Release
-
-Triggered on:
-* `release` events of `published` typed
-
-Goal:
-* Push the current docker image to DockerHub with all required tags
-* Should include main releases on `main` 
-* Should include pre-releases on `next` branch
-
-See [.github/workflows/release-dockerhub.yml](./.github/workflows/release-dockerhub.yml) for exact details
-
-
-#### Test - Release Event On Main Branch (Should Trigger Release)
+#### Test - PR Merge To Next Branch
 
 ```bash
-act release --secret-file ./test-ci/my.secrets -e ./test-ci/events/release-with-version-tag.json --reuse
-```
+act push --secret-file ./test-ci/my.secrets -e ./test-ci/events/push-to-next-branch.json --reuse
+``` 
 
 
-#### Test - Prerelease Event On Next Branch (Should Trigger Release)
-
+#### Test - PR Merge To Feature Branch (Should Not Trigger Release)
 ```bash
-act release --secret-file ./test-ci/my.secrets -e ./test-ci/events/prerelease-with-version-tag.json --reuse
-```
+act push --secret-file ./test-ci/my.secrets -e ./test-ci/events/push-to-feature-branch.json --reuse
+``` 
