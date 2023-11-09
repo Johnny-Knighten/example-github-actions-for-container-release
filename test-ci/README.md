@@ -24,11 +24,7 @@ We had to make some modifications to our GitHub Actions to overcome some limitat
 1. On every actions/cache action we will need to add `if: ${{ !env.ACT }}`
     * This will prevent the actions/cache action from running when we are testing locally
     * nektos/act injects an environment variable `ACT`, so we can use it as an easy flag to catch local testing
-2. Related to above, every `actions/cache` step needs to have the same `name:` field
-    * To make this flexible we will use this snippet:
-      * `- name: ${{ env.ACT || 'Pull Cached Docker layers' }}`
-      * Again we use the `ACT` environment variable to name the step if running locally
-3. We add the `--reuse` flag to the act command
+2. We add the `--reuse` flag to the act command
     * `--reuse` will reuse the same container for each action
     * This effectively gets us the same effect as using a cache
 
