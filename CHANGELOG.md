@@ -1,3 +1,12 @@
+## [1.2.5-next.1](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.4...1.2.5-next.1) (2023-11-09)
+
+
+### Bug Fixes
+
+* made release dry run match normal run ([f7197fe](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/f7197fe043f67b284aeecc66b19dd613ffc262d9))
+* merged all releases into single workflow ([32333da](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/32333da382ddf74f34b1800434f421544f88cde1))
+* passing of version to dockerhub release and dry run ([a7e2f27](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/a7e2f27270a064741f7f4b6bef54c0f480efb040))
+
 ## [1.2.4](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.3...1.2.4) (2023-11-09)
 
 
