@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.2...1.2.3) (2023-11-09)
+
+
+### Bug Fixes
+
+* made checkout based on workflow_run.head_branch ([48ec38b](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/48ec38b8177d569bad1c07cbccbfa7f51b00da20))
+
 ## [1.2.2](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.1...1.2.2) (2023-11-08)
 
 
