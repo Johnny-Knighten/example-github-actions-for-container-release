@@ -1,5 +1,6 @@
-name: DockerHub Push
-run-name: Release Tag on ${{ github.ref_name }} - Pushing Image To DockerHub
+name: DockerHub Release
+run-name: DockerHub Release for ${{ github.ref }}
+
 on:
   push:
     tags: 
