@@ -1,3 +1,10 @@
+## [1.3.0-next.2](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.3.0-next.1...1.3.0-next.2) (2023-11-09)
+
+
+### Bug Fixes
+
+* added short-descript push to dockerhub ([b14a94f](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/b14a94f3efbf1dc223968112943ea0494be310ce))
+
 ## [1.3.0-next.1](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.6...1.3.0-next.1) (2023-11-09)
 
 
