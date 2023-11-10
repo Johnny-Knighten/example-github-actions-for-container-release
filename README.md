@@ -1,4 +1,4 @@
-# Example of GitHub Actions CI/CD Using Docker Containers, Semantic-Release, and DockerHub Release
+# Example use of GitHub Actions for building, testing, and releasing a Docker container
 
 [![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/johnny-knighten/example-github-actions-for-container-release?logo=github&link=https%3A%2F%2Fgithub.com%2FJohnny-Knighten%2Fexample-github-actions-for-container-release)](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/releases)
 [![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/johnny-knighten/example-github-actions-for-container-release/build-and-test.yml?logo=github&label=build%20and%20test%20-%20status)](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/actions/workflows/build-and-test.yml)
@@ -25,7 +25,7 @@ Both branches are protected with branch rules that prevent direct pushes and req
 
 Note - Due to these limitations semantic-release cannot push the new release commit to the `main` or `next` branches. To get around this limitation we will introduce a `GH_TOKEN_SEMANTIC_RELEASE` secret that contains a GitHub Personal Access Token with the `repo` scope. This token will be used by semantic-release to push the new release commit to the `main` or `next` branch. This should only be done in an environment where you can trust all developers/contributors. 
 
-See here for details about the workaround used: https://github.com/semantic-release/git/issues/196#issuecomment-702839100.
+See here for details about the workaround used: https://github.com/semantic-release/git/issues/196#issuecomment-702839100.\
 See here for how to approach it using a GitHub App: https://github.com/semantic-release/github/issues/175#issuecomment-1489689561
 
 ## Releases
