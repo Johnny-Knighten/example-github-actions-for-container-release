@@ -1,9 +1,10 @@
-# Pull Request Template
-
 ## Description
-Please include a summary of the change and which issue is fixed. Also, include relevant motivation and context. List any dependencies that are required for this change.
+Include a summary of the change and which issue is fixed. Also, include relevant motivation and context. List any dependencies that are required for this change.
 
-Fixes # (issue)
+## Issue/Ticket Number and Link (If Relevant)
+
+* Issue #: LINK HERE
+* Ticket #: LINK HERE
 
 ## Type of Change
 Please delete options that are not relevant.
@@ -18,6 +19,7 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 
 - [ ] Test A
 - [ ] Test B
+- ...
 
 ## Checklist:
 Before you submit your Pull Request, make sure you have done the following:
