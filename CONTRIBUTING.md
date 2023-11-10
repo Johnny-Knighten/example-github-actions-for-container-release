@@ -1,4 +1,4 @@
-# Contributing to [Project Name]
+# Contributing to example-github-actions-for-container-release
 
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
