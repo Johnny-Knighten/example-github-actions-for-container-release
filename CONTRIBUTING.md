@@ -1,6 +1,6 @@
 # Contributing to example-github-actions-for-container-release
 
-We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
+We want to make contributing to this project as easy and transparent as possible, whether it's:
 
 - Reporting a bug
 - Discussing the current state of the code
@@ -10,40 +10,31 @@ We love your input! We want to make contributing to this project as easy and tra
 
 ## We Develop with Github
 
-We use GitHub to host code, track issues and feature requests, as well as accept pull requests.
+GitHub is used for all project activities. It is use to to host code, track issues and feature requests, as well as managing pull requests.
 
 ## We Use Github Flow, So All Code Changes Happen Through Pull Requests
 
-Pull requests are the best way to propose changes to the codebase. We actively welcome your pull requests:
+Pull requests are the best way to propose changes to the codebase.
 
-1. Fork the repo and create your branch from `next`.
-2. If you've added code that should be tested, add tests.
-3. Ensure the test suite passes.
-4. Make sure your code lints.
+1. Create your branch from the `next` branch
+2. If you've added code that should be tested, add tests
+3. Ensure the test suite passes
+    * Run our CI/CD actions locally using [nektos/act](https://github.com/nektos/act)
+4. Make sure your code lints
 5. Update any related documentation
-6. Issue that pull request!
+6. Issue that pull request with the merge target as `next`
 
-## We use Github Actions for CI/CD
+To ensure automatic CHANGELOG generation via semantic-release we will not rebase or use squash-commits when accepting PRs. We will rely on merge commits to preserve the commit history, even those they do clutter history. We have branch rules in place to prevent force pushes to `main` and `next` branches. It is recommended to do an interactive rebase before merging your PR to `next` to clean up your commit history. If you force push into your own (non-protected) branch to cleanup its history while in PR review, make sure to inform all assigned reviewers.
 
-We have a workflow that runs on all PRs and pushes to `main` and `next`. See [build-and-test.yml](./.github/workflows/build-and-test.yml) and [release.yml](./.github/workflows/release.yml) for details.
+## We Use Github Actions for CI/CD
+
+There are workflows that runs on all opened PRs, and all pushes to `main` and `next` (when a PR is merged). See [build-and-test.yml](./.github/workflows/build-and-test.yml) and [release.yml](./.github/workflows/release.yml) for details.
+
+All jobs in the [build-and-test.yml](./.github/workflows/build-and-test.yml) must pass before a PR will be accepted.
 
 ## Report bugs using Github Issues
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/issues/new/chooses); it's that easy!
-
-## Write Bug Reports with Detail, Background, and Sample Code
-
-Use the Bug Report issue template to report a bug.
-
-Although you should use the supplied issue template, great bug reports tend to have:
-
-- A quick summary and/or background
-- Steps to reproduce
-  - Be specific!
-  - Give sample code if you can.
-- What you expected would happen
-- What actually happens
-- Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
+We use GitHub issues to track all public bugs. Report a bug by [opening a new bug issue](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/issues/new?assignees=Johnny-Knighten&labels=bug&projects=&template=bug-report.md&title=%7BBUG%7D).
 
 ## Use a Consistent Coding Style
 
@@ -73,11 +64,11 @@ feat(database): add 'comments' option
 
 This example indicates that a feature (feat) was added to the 'database' scope of the project.
 
+The two main primary types used to increment the semver are `fix:` and `feat`, but some others to consider are `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, and `test:`.
+
 ## License
 
 By contributing, you agree that your contributions will be licensed under its [MIT License](LICENSE).
-
-#Any contributions you make will be under the same [License](LICENSE)
 
 In short, when you submit code changes, your submissions are understood to be under the same [MIT License](LICENSE) that covers the project. Feel free to contact the maintainers if that's a concern.
 
