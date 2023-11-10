@@ -1,3 +1,11 @@
+## [1.4.0](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.3.1...1.4.0) (2023-11-10)
+
+
+### Features
+
+* create bug and feature issue templates ([7c72a79](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/7c72a799d95ab25c944289cc243a0afe02be8a9c))
+* create bug and feature issue templates ([#33](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/issues/33)) ([982f3fe](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/982f3fe7448f5d06dfb3986984018398ada72f64))
+
 ## [1.3.1](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.3.0...1.3.1) (2023-11-10)
 
 
