@@ -1,5 +1,13 @@
 # Example of GitHub Actions CI/CD Using Docker Containers, Semantic-Release, and DockerHub Release
 
+![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/johnny-knighten/example-github-actions-for-container-release?logo=github&link=https%3A%2F%2Fgithub.com%2FJohnny-Knighten%2Fexample-github-actions-for-container-release)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/johnny-knighten/example-github-actions-for-container-release/build-and-test.yml?logo=github&label=build%20and%20test%20-%20status)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/johnny-knighten/example-github-actions-for-container-release/release.yml?logo=github&label=release%20-%20status)
+![GitHub Repo stars](https://img.shields.io/github/stars/johnny-knighten/example-github-actions-for-container-release?logo=github)
+![GitHub](https://img.shields.io/github/license/johnny-knighten/example-github-actions-for-container-release?logo=github)
+
+![Docker Image Version (latest semver)](https://img.shields.io/docker/v/johnnyknighten/example-github-actions-for-container-release?logo=docker&label=dockerhub%20-%20latest)
+
 This repo is an example of using GitHub Actions for CI/CD with the following technologies:
 * Docker Containers
 * Semantic-Release
