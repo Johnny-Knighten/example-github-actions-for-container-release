@@ -1,3 +1,86 @@
+## [1.3.0-next.5](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.3.0-next.4...1.3.0-next.5) (2023-11-10)
+
+
+### Features
+
+* added badges to README ([c05e0c3](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/c05e0c3bd0e1684eca1f26bcc371a18c8efaa93b))
+
+## [1.3.0-next.4](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.3.0-next.3...1.3.0-next.4) (2023-11-09)
+
+
+### Bug Fixes
+
+* added repo checkout in test job ([03edf11](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/03edf11c966211df8bc07d6873ff63d59d1adb2b))
+* removed cache-to in release workflow ([6c3684d](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/6c3684d043e9f3c5f1608507da8c4c465b30fe7d))
+* updated docker caching between jobs ([c715d5f](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/c715d5f7ae632ab5e94712dbf03433accda31b0b))
+* updated dockerhub repo name ([0d9f72f](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/0d9f72f015ff027ad2e88f95aebcb213e125ebdc))
+* updated github repo url ([394f08a](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/394f08a9dda44fc9b76fb0c90e21102a53527a5e))
+
+## [1.3.0-next.3](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.3.0-next.2...1.3.0-next.3) (2023-11-09)
+
+
+### Bug Fixes
+
+* updated halolint-action to v3.1.0 ([2661a22](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/2661a2237b61144bc98844878b4cfe0291a7c0be))
+* updated setup-buildx-action to v3 ([b6300f9](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/b6300f990bb94dafb6373aa1211ab803babece5b))
+
+## [1.3.0-next.2](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.3.0-next.1...1.3.0-next.2) (2023-11-09)
+
+
+### Bug Fixes
+
+* added short-descript push to dockerhub ([b14a94f](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/b14a94f3efbf1dc223968112943ea0494be310ce))
+
+## [1.3.0-next.1](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.6...1.3.0-next.1) (2023-11-09)
+
+
+### Features
+
+* dockerhub description now matches base README.md ([5cfa91f](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/5cfa91fee9f4d082437942c5953d37026cc1c577))
+
+## [1.2.6-next.6](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.5...1.2.6-next.6) (2023-11-09)
+
+
+### Bug Fixes
+
+* updated job and runname on releae workflow ([bdae9a7](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/bdae9a7b9c9749b5e78a646ed67458a5eb431c4d))
+
+## [1.2.6-next.5](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.4...1.2.6-next.5) (2023-11-09)
+
+
+### Bug Fixes
+
+* removed debug job ([4ab72c2](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/4ab72c2155fde8ba5975ceabfcadc340bd59afa9))
+
+## [1.2.6-next.4](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.3...1.2.6-next.4) (2023-11-09)
+
+
+### Bug Fixes
+
+* removed extra dollar sign in non dry-run release ([7139746](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/7139746c1956d47c940ca700da609cee1c7bf4d2))
+
+## [1.2.6-next.3](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.2...1.2.6-next.3) (2023-11-09)
+
+
+### Bug Fixes
+
+* added debug job ([0e8e289](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/0e8e289eb118e0d04f777f0ff1b1329786b0b789))
+
+## [1.2.6-next.2](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.6-next.1...1.2.6-next.2) (2023-11-09)
+
+
+### Bug Fixes
+
+* made ifs in dockerhub-rlease look for empty strings ([fa31f1a](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/fa31f1a3ae361a179472d1b82a2ac826332dc690))
+
+## [1.2.6-next.1](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.5...1.2.6-next.1) (2023-11-09)
+
+
+### Bug Fixes
+
+* added output echo to remeanse release ([f96af0c](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/f96af0cfb23ce44fab3eecbda225161e1adbaad3))
+* removed extra dry run in semver ([94171ac](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/commit/94171ac624a76daa980de0dca5669f1745248fbd))
+
 ## [1.2.5](https://github.com/Johnny-Knighten/dockerhub-plus-semver-ci-test/compare/1.2.4...1.2.5) (2023-11-09)
 
 
