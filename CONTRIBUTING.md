@@ -29,7 +29,7 @@ We have a workflow that runs on all PRs and pushes to `main` and `next`. See [bu
 
 ## Report bugs using Github Issues
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](NEW_ISSUE_LINK); it's that easy!
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/issues/new/chooses); it's that easy!
 
 ## Write Bug Reports with Detail, Background, and Sample Code
 
