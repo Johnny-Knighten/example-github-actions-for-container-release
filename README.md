@@ -4,7 +4,7 @@
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/johnny-knighten/example-github-actions-for-container-release/build-and-test.yml?logo=github&label=build%20and%20test%20-%20status)
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/johnny-knighten/example-github-actions-for-container-release/release.yml?logo=github&label=release%20-%20status)
 ![GitHub Repo stars](https://img.shields.io/github/stars/johnny-knighten/example-github-actions-for-container-release?logo=github)
-![GitHub](https://img.shields.io/github/license/johnny-knighten/example-github-actions-for-container-release?logo=github)
+![GitHub](https://img.shields.io/github/license/Johnny-Knighten/example-github-actions-for-container-release?logo=github)
 
 ![Docker Image Version (latest semver)](https://img.shields.io/docker/v/johnnyknighten/example-github-actions-for-container-release?logo=docker&label=dockerhub%20-%20latest)
 
@@ -22,6 +22,11 @@ The container image created in this repo is just for demonstrations purposes and
 There are two primary branches in this repo `main` and `next`. The `main` branch is the stable release branch and the `next` branch is the prerelease branch. Emergency fixes and sometime small features can be PR merged into `main`, but all other features should be PR merged into `next`. The `next` branch is merged into `main` when a new stable release is ready.
 
 Both branches are protected with branch rules that prevent direct pushes and require PRs to add new commits to those branches. 
+
+Note - Due to these limitations semantic-release cannot push the new release commit to the `main` or `next` branches. To get around this limitation we will introduce a `GH_TOKEN_SEMANTIC_RELEASE` secret that contains a GitHub Personal Access Token with the `repo` scope. This token will be used by semantic-release to push the new release commit to the `main` or `next` branch. This should only be done in an environment where you can trust all developers/contributors. 
+
+See here for details about the workaround used: https://github.com/semantic-release/git/issues/196#issuecomment-702839100.
+See here for how to approach it using a GitHub App: https://github.com/semantic-release/github/issues/175#issuecomment-1489689561
 
 ## Releases
 
