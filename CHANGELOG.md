@@ -1,3 +1,20 @@
+## [1.4.0](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.3.1...1.4.0) (2023-11-10)
+
+
+### Features
+
+* create bug and feature issue templates ([7c72a79](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/7c72a799d95ab25c944289cc243a0afe02be8a9c))
+* create bug and feature issue templates ([#33](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/issues/33)) ([982f3fe](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/982f3fe7448f5d06dfb3986984018398ada72f64))
+
+## [1.3.1](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.3.0...1.3.1) (2023-11-10)
+
+
+### Bug Fixes
+
+* changed release workflow to match github issue example ([ef31f41](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/ef31f41cff66bb907950808c0260e89536eb98b6)), closes [/github.com/semantic-release/git/issues/196#issuecomment-702839100](https://github.com/Johnny-Knighten//github.com/semantic-release/git/issues/196/issues/issuecomment-702839100)
+* made license badge work in README ([423c053](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/423c05364da691035619b65a158318800582ddaa))
+* made release steps use PAT ([436d087](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/436d087bfa193a3d5c9cd34083510a080c0103ed))
+
 ## [1.3.1-next.1](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.3.0...1.3.1-next.1) (2023-11-10)
 
 

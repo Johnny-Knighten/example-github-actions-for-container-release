@@ -1,12 +1,12 @@
 # Example of GitHub Actions CI/CD Using Docker Containers, Semantic-Release, and DockerHub Release
 
-![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/johnny-knighten/example-github-actions-for-container-release?logo=github&link=https%3A%2F%2Fgithub.com%2FJohnny-Knighten%2Fexample-github-actions-for-container-release)
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/johnny-knighten/example-github-actions-for-container-release/build-and-test.yml?logo=github&label=build%20and%20test%20-%20status)
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/johnny-knighten/example-github-actions-for-container-release/release.yml?logo=github&label=release%20-%20status)
-![GitHub Repo stars](https://img.shields.io/github/stars/johnny-knighten/example-github-actions-for-container-release?logo=github)
-![GitHub](https://img.shields.io/github/license/Johnny-Knighten/example-github-actions-for-container-release?logo=github)
+[![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/johnny-knighten/example-github-actions-for-container-release?logo=github&link=https%3A%2F%2Fgithub.com%2FJohnny-Knighten%2Fexample-github-actions-for-container-release)](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/releases)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/johnny-knighten/example-github-actions-for-container-release/build-and-test.yml?logo=github&label=build%20and%20test%20-%20status)](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/actions/workflows/build-and-test.yml)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/johnny-knighten/example-github-actions-for-container-release/release.yml?logo=github&label=release%20-%20status)](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/actions/workflows/release.yml)
+[![GitHub Repo stars](https://img.shields.io/github/stars/johnny-knighten/example-github-actions-for-container-release?logo=github)](https://github.com/Johnny-Knighten/example-github-actions-for-container-release)
+[![GitHub](https://img.shields.io/github/license/Johnny-Knighten/example-github-actions-for-container-release?logo=github)](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/blob/main/LICENSE)
 
-![Docker Image Version (latest semver)](https://img.shields.io/docker/v/johnnyknighten/example-github-actions-for-container-release?logo=docker&label=dockerhub%20-%20latest)
+[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/johnnyknighten/example-github-actions-for-container-release?logo=docker&label=dockerhub%20-%20latest)](https://hub.docker.com/r/johnnyknighten/example-github-actions-for-container-release)
 
 This repo is an example of using GitHub Actions for CI/CD using the following technologies:
 * [Docker](https://www.docker.com/)
