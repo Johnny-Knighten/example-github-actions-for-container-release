@@ -1,3 +1,11 @@
+## [1.4.1-next.1](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.4.0...1.4.1-next.1) (2023-11-10)
+
+
+### Bug Fixes
+
+* wrapped links around all bades ([6716432](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/67164320dc3643dcf8b5512c742d3e17ed168115))
+* wrapped links around all badges ([#34](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/issues/34)) ([c99d703](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/c99d703bf542f9e623d0dfe3f0f219edf9dae21d))
+
 ## [1.4.0](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.3.1...1.4.0) (2023-11-10)
 
 
