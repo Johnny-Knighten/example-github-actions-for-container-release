@@ -1,3 +1,10 @@
+## [1.3.0-next.5](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.3.0-next.4...1.3.0-next.5) (2023-11-10)
+
+
+### Features
+
+* added badges to README ([c05e0c3](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/c05e0c3bd0e1684eca1f26bcc371a18c8efaa93b))
+
 ## [1.3.0-next.4](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.3.0-next.3...1.3.0-next.4) (2023-11-09)
 
 
