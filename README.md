@@ -4,7 +4,7 @@
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/johnny-knighten/example-github-actions-for-container-release/build-and-test.yml?logo=github&label=build%20and%20test%20-%20status)
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/johnny-knighten/example-github-actions-for-container-release/release.yml?logo=github&label=release%20-%20status)
 ![GitHub Repo stars](https://img.shields.io/github/stars/johnny-knighten/example-github-actions-for-container-release?logo=github)
-![GitHub](https://img.shields.io/github/license/johnny-knighten/example-github-actions-for-container-release?logo=github)
+![GitHub](https://img.shields.io/github/license/Johnny-Knighten/example-github-actions-for-container-release?logo=github)
 
 ![Docker Image Version (latest semver)](https://img.shields.io/docker/v/johnnyknighten/example-github-actions-for-container-release?logo=docker&label=dockerhub%20-%20latest)
 
