@@ -79,6 +79,8 @@ When the Workflows is actually executed on GitHub a Token is injected automatica
     * If you really want to go this route as a space in front of the `act` command to omit it from your shells history
 * Create a secrets file and inject it
 
+We will also need the `GH_TOKEN_SEMANTIC_RELEASE` that contains a PAT that will allows use to bypass pushing to a protected branch. See the Branch Setup section in the base README for more details.
+
 #### DockerHub Secrets
 
 On the DockerHub side of things we will need a username (`DOCKERHUB_USERNAME`) and a Personal Access Token (`DOCKERHUB_TOKEN`).
@@ -92,7 +94,8 @@ nektos/act uses Ruby's gem dotenv format through godotenv library. Here is a tem
 ```
 export DOCKERHUB_USERNAME=USERNAME
 DOCKERHUB_TOKEN=TOKEN
-GITHUB_TOKEN=TOKEN
+GITHUB_TOKEN=PAT-TOKEN-1
+GH_TOKEN_SEMANTIC_RELEASE=PAT-TOKEN-2
 ```
 **Remember - NEVER commit your secrets file. Although normally I would suggest adding something like `*.secrets` to your `.gitignore`; however, this seems to prevent act from reading from the file.**
 
