@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.4.1...1.4.2) (2023-11-10)
+
+
+### Bug Fixes
+
+* added paths-ignore to release workflow ([dbbd46c](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/dbbd46c11a6065672b4402cc307cbc212910fced))
+
 ## [1.4.2-next.1](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.4.1...1.4.2-next.1) (2023-11-10)
 
 
