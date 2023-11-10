@@ -6,6 +6,8 @@ on:
     branches:
       - main
       - next
+    paths-ignore:
+      - 'CHANGELOG.md'
 
 env:
   ACT: ""
