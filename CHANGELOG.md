@@ -1,3 +1,11 @@
+## [1.4.4-next.1](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.4.3...1.4.4-next.1) (2023-11-11)
+
+
+### Bug Fixes
+
+* updated grep that extracts version number ([d3bee84](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/d3bee844bdbe11b412ba2ea368e2d15e4e965536))
+* went back to singleline output var assignment ([fa671db](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/fa671db68a7449ce46b9ba773fd521cfdff0a266))
+
 ## [1.4.3](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.4.2...1.4.3) (2023-11-10)
 
 
