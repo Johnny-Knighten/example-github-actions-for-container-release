@@ -46,7 +46,7 @@ jobs:
         run: |
           OUTPUT=$(npx semantic-release)
           echo "$OUTPUT"
-          NEW_VERSION=$(echo "$OUTPUT" | grep "Published" | cut -d" " -f9)
+          NEW_VERSION=$(echo "$OUTPUT" | grep "Published release" | cut -d" " -f9)
           echo "new_version<<EOF" >> $GITHUB_OUTPUT
           echo "$NEW_VERSION" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
@@ -59,7 +59,7 @@ jobs:
         run: |
           DRY_RUN_OUTPUT=$(npx semantic-release --dry-run)
           echo "$DRY_RUN_OUTPUT"
-          NEW_VERSION=$(echo "$DRY_RUN_OUTPUT" | grep "Published" | cut -d" " -f9)
+          NEW_VERSION=$(echo "$DRY_RUN_OUTPUT" | grep "Published release" | cut -d" " -f9)
           echo "new_version<<EOF" >> $GITHUB_OUTPUT
           echo "$NEW_VERSION" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
