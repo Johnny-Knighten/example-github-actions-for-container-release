@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.4.2...1.4.3) (2023-11-10)
+
+
+### Bug Fixes
+
+* updated contributing doc ([6e660c8](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/commit/6e660c8640e80077d09ba4df30187ef940b62649))
+
 ## [1.4.3-next.1](https://github.com/Johnny-Knighten/example-github-actions-for-container-release/compare/1.4.2...1.4.3-next.1) (2023-11-10)
 
 
